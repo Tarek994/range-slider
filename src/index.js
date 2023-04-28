@@ -2,7 +2,7 @@ module.exports = rangeSlider
 
 function rangeSlider() {
   const el = document.createElement("div")
-  el.classList.add('container')
+  el.classList.add("container")
   const shadow = el.attachShadow({ mode: "closed" })
 
   const input = document.createElement("input")
@@ -27,11 +27,27 @@ function rangeSlider() {
 
 function get_theme() {
   return `
-    :host(.container){
-        background-color: red;
-    }
-    input{
-        width:60%;
-    }
-    `
+  :host { box-sizing: border-box; }
+  *, *:before, *:after { box-sizing: inherit; }
+  :host {
+    --white       : hsla(0,0%,100%,1);
+    --transparent : hsla(0,0%,0%,0);
+    --grey        : hsla(0,0%,90%,1);
+    --blue       : hsla(207, 88%, 66%, 1);
+    position: relative;
+    width: 100%;
+    height: 16px;
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    margin: 0;
+    z-index: 2;
+    background-color: var(--transparent);
+  }
+  `
 }
