@@ -63,5 +63,18 @@ function get_theme() {
     flex-direction: column;
     justify-content: center;
   }
+  .ruler {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    transform: scale(-1, 1);
+    background-size: 20px 8px;
+    background-image:  repeating-linear-gradient(to right,
+      var(--grey) 0px,
+      var(--grey) 17px,
+      var(--white) 17px,
+      var(--white) 20px
+    );
+  }
   `
 }
