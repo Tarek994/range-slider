@@ -22,7 +22,7 @@ function rangeSlider() {
   const style = document.createElement("style")
   style.textContent = get_theme()
   shadow.append(style, input, bar)
-  return el;
+  return el
 }
 
 function get_theme() {
