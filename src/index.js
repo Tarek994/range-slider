@@ -49,5 +49,19 @@ function get_theme() {
     z-index: 2;
     background-color: var(--transparent);
   }
+  .bar {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 0;
+    height: 10px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   `
 }
