@@ -1,6 +1,8 @@
 module.exports = rangeSlider
 
-function rangeSlider() {
+function rangeSlider(opts) {
+  const {min= 0, max= 1000} = opts
+
   const el = document.createElement("div")
   el.classList.add("container")
   const shadow = el.attachShadow({ mode: "closed" })
