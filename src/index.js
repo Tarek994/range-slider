@@ -27,6 +27,12 @@ function rangeSlider(opts) {
   style.textContent = get_theme()
   shadow.append(style, input, bar)
   return el
+
+  // handler
+  function handle_input (e){
+    const val = Number(e.target.value)
+    console.log(val)
+  }
 }
 
 function get_theme() {
