@@ -76,5 +76,16 @@ function get_theme() {
       var(--white) 20px
     );
   }
+  .fill {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: var(--grey);
+  }
+  input:focus + .bar .fill,
+  input:focus-within + .bar .fill,
+  input:active + .bar .fill {
+    background-color: var(--blue);
+  }
   `
 }
