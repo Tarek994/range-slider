@@ -10,6 +10,8 @@ function rangeSlider(opts) {
   const input = document.createElement("input")
   input.type = "range"
 
+  input.oninput = handle_input
+
   const bar = document.createElement("div")
   bar.classList.add("bar")
 
