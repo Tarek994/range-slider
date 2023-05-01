@@ -9,6 +9,9 @@ function rangeSlider(opts) {
 
   const input = document.createElement("input")
   input.type = "range"
+  input.min = min
+  input.max = max
+  input.value = min
 
   input.oninput = handle_input
 
