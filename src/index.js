@@ -31,6 +31,7 @@ function rangeSlider(opts) {
   // handler
   function handle_input (e){
     const val = Number(e.target.value)
+    fill.style.width = `${(val/max)*100}%`
     console.log(val)
   }
 }
