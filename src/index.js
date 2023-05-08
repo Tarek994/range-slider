@@ -1,6 +1,6 @@
 module.exports = rangeSlider
 
-function rangeSlider(opts) {
+function rangeSlider(opts, notify) {
   const {min= 0, max= 1000} = opts
 
   const el = document.createElement("div")
@@ -35,6 +35,7 @@ function rangeSlider(opts) {
   function handle_input (e){
     const val = Number(e.target.value)
     fill.style.width = `${(val/max)*100}%`
+    notify({type: `update`, body: val})
     console.log(val)
   }
 }
