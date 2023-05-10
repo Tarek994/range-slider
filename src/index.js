@@ -12,6 +12,7 @@ function rangeSlider(opts, protocol) {
     const {type, data} = message
     if (type === 'update') {
       input.value = data
+      fill.style.width = `${(data/max)*100}%`
     }
   }
 
