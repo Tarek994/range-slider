@@ -4,6 +4,8 @@ var id = 0
 
 function rangeSlider(opts, protocol) {
   const {min= 0, max= 1000} = opts
+  const name = `range-${id++}`
+
 
   const el = document.createElement("div")
   el.classList.add("container")
