@@ -1,6 +1,8 @@
 module.exports = rangeSlider
 
-function rangeSlider(opts, notify) {
+var id = 0
+
+function rangeSlider(opts, protocol) {
   const {min= 0, max= 1000} = opts
 
   const el = document.createElement("div")
