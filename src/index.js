@@ -13,6 +13,7 @@ function rangeSlider(opts, protocol) {
     if (type === 'update') {
       input.value = data
       fill.style.width = `${(data/max)*100}%`
+      input.focus()
     }
   }
 
