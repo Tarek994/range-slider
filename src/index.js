@@ -35,7 +35,7 @@ function rangeSlider(opts, notify) {
   function handle_input (e){
     const val = Number(e.target.value)
     fill.style.width = `${(val/max)*100}%`
-    notify({type: 'update', body: val})
+    notify({from: name,type: 'update', data: val})
     console.log(val)
   }
 }
